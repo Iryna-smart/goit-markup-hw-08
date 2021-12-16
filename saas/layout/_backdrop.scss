@@ -29,10 +29,10 @@
   
   
   .modal__close {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
     width: 30px;
     height: 30px;
     background-color: transparent;
@@ -41,9 +41,7 @@
     padding: 0;
     top: 10px;
     right: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
  }
   
  .modal__icon-close {
@@ -105,8 +103,7 @@
     left: 12px;
     top: 50%;
     transform: translateY(10%);
-    
-     transition: border-color 250ms linear;
+    transition: border-color 250ms linear;
        .input__form:focus + & {
         fill: var(--accent-color);
     }
@@ -173,9 +170,9 @@
 
   .modal__button {
     @extend %button;
-     margin-top: 30px;
-    width: 200px;
+     width: 200px;
     height: 50px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     &:hover {

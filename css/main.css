@@ -72,17 +72,6 @@ ul {
   text-decoration: none;
 }
 
-.primary-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  color: var(--primary-title-color);
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 50px;
-}
-
 .container {
   width: 1200px;
   margin-left: auto;
@@ -130,19 +119,6 @@ ul {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .footer__social-link, .card-team__social-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -162,6 +138,31 @@ ul {
   background-color: var(--accent-color);
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.primary-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  color: var(--primary-title-color);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.footer__title, .work__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.work__after-title {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .backdrop {
@@ -201,6 +202,7 @@ ul {
 }
 
 .modal__close {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -210,7 +212,6 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
   width: 30px;
   height: 30px;
   background-color: transparent;
@@ -219,9 +220,6 @@ ul {
   padding: 0;
   top: 10px;
   right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .modal__icon-close {
@@ -366,9 +364,9 @@ ul {
 }
 
 .modal__button {
-  margin-top: 30px;
   width: 200px;
   height: 50px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -447,10 +445,6 @@ ul {
   margin-left: 0;
 }
 
-.example__list .example__item:first-child {
-  margin-left: 0;
-}
-
 .example__text-box {
   display: block;
   position: absolute;
@@ -461,13 +455,8 @@ ul {
   background: rgba(47, 48, 58, 0.8);
 }
 
-.example__top-text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+.example__title {
   text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--secondary-title-color);
 }
 
@@ -557,8 +546,6 @@ ul {
 }
 
 .contact__link-footer {
-  font-weight: 400;
-  font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -599,13 +586,6 @@ ul {
 }
 
 .footer__title {
-  display: inline-block;
-  font-family: Roboto;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
 }
@@ -831,8 +811,8 @@ ul {
 }
 
 .hero {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./images/hero.png");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./images/hero.png");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/hero.png");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/hero.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1066,19 +1046,12 @@ ul {
 }
 
 .work__title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--primary-title-color);
   margin-bottom: 10px;
 }
 
 .work__after-title {
   width: 270px;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: var(--link-color);
 }
 /*# sourceMappingURL=main.css.map */

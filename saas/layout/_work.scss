@@ -26,19 +26,14 @@
   
   
   .work__title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+    @extend %title;
     color: var(--primary-title-color);
     margin-bottom: 10px;
   }
   
   .work__after-title {
+    @extend %afterText;
     width: 270px;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    color: var(--secondary-text-color);
+   color: var(--secondary-text-color:);
   }
   

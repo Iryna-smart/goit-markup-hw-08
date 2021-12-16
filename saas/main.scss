@@ -1,10 +1,15 @@
 @import './utils/variables';
-@import './utils/normalize';
+
 
 @import './component/container';
 @import './component/logo';
 @import './component/button';
 @import './component/social-link';
+@import './component/primary-title';
+@import './component/title';
+@import './component/afterText';
+
+
 
 @import './layout/backdrop';
 @import './layout/client';
