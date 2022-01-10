@@ -1,39 +1,108 @@
-.section__work {
-    padding-top: 94px;
-    padding-bottom: 0;
+.section__works {
+  margin-left: auto;
+  margin-right: auto;
+   padding-top : 94px;
+    padding-bottom : 94px;
+     } 
+  
+     @media screen and (max-width: 1199.5px){
+      .section__works {
+        padding-top : 60px;
+    padding-bottom : 60px;
+      }
+      
+     }
+     
+
+   @media screen and (max-width:767px){
+    .works__list{
+      display: flex;
+      flex-direction: column;
+      margin-left: auto;
+      margin-right: auto;
+      width: 450px;
+      }
   }
-  .work__content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
+  @media screen and (min-width: 768px),(max-width:1199.5px){
+    .works__list{
+     display: flex;
+      flex-wrap: wrap;
+         }
+      }
+
+      @media screen and (min-width:1200px){
+        .works__list{
+          display: flex;
+          flex-wrap: nowrap;
+        }
+      }
+
+
+  .works__box{
     height: 120px;
+    display:flex;
+    align-items: center;
+    justify-content:center;
     margin-bottom: 30px;
     background-color: #f5f4fa;
-  }
-  
-  .work__list {
-    display: flex;
-    margin: 0 auto;
-  }
-  
-  .work__item {
-    margin-left: 30px;
-      .work-list &:first-child {
-       margin-left: 0;
     }
-  }
+
+
+    .works__item{
+   display: block;
+   }
+     
+   
+    @media screen and (min-width: 1200px){
+      .works__item{
+          flex-basis: calc((100% - 3 * 30px) / 4);
+      }
+      .works__item:not(:last-child){
+        margin-right: 30px;
+      }
+   }
+
+
   
+    @media screen and (min-width: 768px),(max-width: 1199.5px){
+      .works__item{
+        flex-basis: calc((100% - 2 * 30px) / 2);
+       }
+      .works__item:not(:last-child){
+        margin-bottom: 30px;
+      }
+
+      .works__item:not(:last-child){
+        margin-right: 30px;
+      }
+     }
   
+  @media screen and (max-width: 768px){
+       .works__item:not(:last-child){
+        margin: 0 0 30px 0;
+         }
+       
+     }
+    
+     .works__title {
+      @extend %title;
+      text-align: start;
+      color: var(--primary-title-color);
+      margin-bottom: 10px;
+      }
+
+      @media screen and (max-width: 768px){
+        .works__title{
+          text-align: center;
+        }
+      }
+
+    
+    .works__after-title {
+      @extend %afterText;
+     color: var(--secondary-text-color);
+    }
+
   
-  .work__title {
-    @extend %title;
-    color: var(--primary-title-color);
-    margin-bottom: 10px;
-  }
-  
-  .work__after-title {
-    @extend %afterText;
-    width: 270px;
-   color: var(--secondary-text-color);
-  }
-  
+   

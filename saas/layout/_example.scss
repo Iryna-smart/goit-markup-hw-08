@@ -1,5 +1,8 @@
+
 .example__list { 
-    display: flex; 
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
      } 
     
     
@@ -26,3 +29,13 @@
     text-align: center; 
     color: var(--secondary-title-color); 
     }
+
+    @media screen and (max-width: 1199.5px){
+      .primary-title{
+        display: none;
+      }
+      .example__list{
+        display: none;
+      }
+    }
+    
