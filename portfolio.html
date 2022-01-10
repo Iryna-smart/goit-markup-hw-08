@@ -21,15 +21,21 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./dist/css/main.min.css" />
-    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    
   </head>
   <body>
-    <!-- Header  -->
+    <!------------------------------------- header----------------------- -->
 
     <header class="header-portfolio">
       <div class="container">
         <div class="header__content">
           <a href="" class="logo">Web<span class="logo logo-accent">Studio</span></a>
+          <button class="menu__button menu__button--left js-open-menu" type="button"
+          aria-label="Кнопка открытия мобильного меню" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
           <nav class="header__nav">
             <ul class="nav__list list">
               <li class="nav__item">
@@ -66,9 +72,9 @@
       </div>
     </header>
 
-    <!-- Portfolio -->
+    <!------------------------------------portfolio------------------------------>
 
-    <!--  Filter  -->
+    <!-------------------------------------filter----------------------------------- -->
 
     <section class="section">
       <div class="container">
@@ -91,7 +97,7 @@
           </li>
         </ul>
 
-        <!--  Project  -->
+        <!---------------------------------- project ------------------------------>
 
         <div class="container">
           <ul class="project__list list">
@@ -100,19 +106,22 @@
                 <div class="project__item-wrap">
                   <picture>
                     <source
-                      srcset="../images/portfolio/img3-mobile.jpg 1x,  ../images/portfolio/img3-mobile@2.jpg 2x"
+                      srcset="./images/portfolio/img3-mobile.jpg 1x,  
+                              ./images/portfolio/img3-mobile@2.jpg 2x"
                       type="image/jpeg" media="(max-width: 767.5px)" />
   
                     
                     <source
-                      srcset="../images/portfolio/img3-tablet.jpg 1x, ../images/portfolio/img3-tablet@2.jpg 2x"
+                      srcset="./images/portfolio/img3-tablet.jpg 1x,
+                              ./images/portfolio/img3-tablet@2.jpg 2x"
                       type="image/jpeg" media="(min-width: 768px)" />
   
                    
                     <source
-                      srcset="../images/portfolio/img3-desk.jpg 1x, ../images/portfolio/img3-desk@2.jpg  2x"
+                      srcset="./images/portfolio/img3-desk.jpg 1x, 
+                               ./images/portfolio/img3-desk@2.jpg  2x"
                       type="image/jpeg" media="(min-width: 1200px)" />
-                    <img class="portfolio__img" src="../images/portfolio/img3-mobile.jpg 1x " alt="веб сайт технокряк"
+                    <img class="portfolio__img" src="./images/portfolio/img3-mobile.jpg 1x " alt="веб сайт технокряк"
                       width="450" height="294" />
                   </picture>
                  
@@ -133,23 +142,26 @@
                 <div class="project__item-wrap">
                   <picture>
                     <source
-                      srcset="../images/portfolio/img4-mobile.jpg 1x,  ../images/portfolio/img4-mobile@2.jpg 2x"
+                      srcset="./images/portfolio/img4-mobil.jpg 1x,  
+                              ./images/portfolio/img4-mobil@2.jpg 2x"
                       type="image/jpeg" media="(max-width: 767.5px)" />
   
                     
                     <source
-                      srcset="../images/portfolio/img4-tablet.jpg 1x, ../images/portfolio/img4-tablet@2.jpg 2x"
+                      srcset="./images/portfolio/img4-tablet.jpg 1x, 
+                              ./images/portfolio/img4-tablet@2.jpg 2x"
                       type="image/jpeg" media="(min-width: 768px)" />
   
                    
                     <source
-                      srcset="../images/portfolio/img4-desk.jpg 1x, ../images/portfolio/img4-desk@2.jpg  2x"
+                      srcset="./images/portfolio/img4-desk.jpg 1x, 
+                              ./images/portfolio/img4-desk@2.jpg  2x"
                       type="image/jpeg" media="(min-width: 1200px)" />
-                    <img class="portfolio__img" src="../images/portfolio/img4-mobile.jpg 1x " alt="Двое играют в баскетбол"
+                    <img class="portfolio__img" src="./images/portfolio/img4-mobil.jpg 1x " alt="Двое играют в баскетбол"
                       width="450" height="294" />
                   </picture>
                  
-                  <!-- <img src="./images/img4.png" alt="Двое играют в баскетбол" /> -->
+                  
                   <p class="project__top-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -169,22 +181,25 @@
                 <div class="project__item-wrap">
                   <picture>
                     <source
-                      srcset="../images/portfolio/img5-mobile.jpg 1x,  ../images/portfolio/img5-mobile@2.jpg 2x"
+                      srcset="./images/portfolio/img5-mobil.jpg 1x,
+                              ./images/portfolio/img5-mobil@2.jpg 2x"
                       type="image/jpeg" media="(max-width: 767.5px)" />
   
                     
                     <source
-                      srcset="../images/portfolio/img5-tablet.jpg 1x, ../images/portfolio/img5-tablet@2.jpg 2x"
+                      srcset="./images/portfolio/img5-tablet.jpg 1x,
+                              ./images/portfolio/img5-tablet@2.jpg 2x"
                       type="image/jpeg" media="(min-width: 768px)" />
   
                    
                     <source
-                      srcset="../images/portfolio/img5-desk.jpg 1x, ../images/portfolio/img5-desk@2.jpg  2x"
+                      srcset="./images/portfolio/img5-desk.jpg 1x, 
+                               ./images/portfolio/img5-desk@2.jpg  2x"
                       type="image/jpeg" media="(min-width: 1200px)" />
-                    <img class="portfolio__img" src="../images/portfolio/img5-mobile.jpg 1x " alt="Двое играют в баскетбол"
+                    <img class="portfolio__img" src="./images/portfolio/img5-mobil.jpg 1x " alt="Логотип ресторана"
                       width="450" height="294" />
                   </picture>
-                  <!-- <img src="./images/img5.png" alt="Логотип ресторана" /> -->
+                  
                   <p class="project__top-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -202,22 +217,25 @@
                 <div class="project__item-wrap">
                   <picture>
                     <source
-                      srcset="../images/portfolio/img6-mobile.jpg 1x,  ../images/portfolio/img6-mobile@2.jpg 2x"
+                      srcset="./images/portfolio/img6-mobil.jpg 1x, 
+                              ./images/portfolio/img6-mobil@2.jpg 2x"
                       type="image/jpeg" media="(max-width: 767.5px)" />
   
                     
                     <source
-                      srcset="../images/portfolio/img6-tablet.jpg 1x, ../images/portfolio/img6-tablet@2.jpg 2x"
+                      srcset="./images/portfolio/img6-tablet.jpg 1x, 
+                             ./images/portfolio/img6-tablet@2.jpg 2x"
                       type="image/jpeg" media="(min-width: 768px)" />
   
                    
                     <source
-                      srcset="../images/portfolio/img6-desk.jpg 1x, ../images/portfolio/img6-desk@2.jpg  2x"
+                      srcset="./images/portfolio/img6-desk.jpg 1x, 
+                              ./images/portfolio/img6-desk@2.jpg  2x"
                       type="image/jpeg" media="(min-width: 1200px)" />
-                    <img class="portfolio__img" src="../images/portfolio/img6-mobile.jpg 1x " alt="Двое играют в баскетбол"
+                    <img class="portfolio__img" src="./images/portfolio/img6-mobil.jpg 1x " alt="Наушники"
                       width="450" height="294" />
                   </picture>
-                  <!-- <img src="./images/img6.png" alt="Наушники" /> -->
+                  
                   <p class="project__top-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -235,22 +253,25 @@
                 <div class="project__item-wrap">
                   <picture>
                     <source
-                      srcset="../images/portfolio/img7-mobile.jpg 1x,  ../images/portfolio/img7-mobile@2.jpg 2x"
+                      srcset="./images/portfolio/img7-mobil.jpg 1x, 
+                              ./images/portfolio/img7-mobil@2.jpg 2x"
                       type="image/jpeg" media="(max-width: 767.5px)" />
   
                     
                     <source
-                      srcset="../images/portfolio/img7-tablet.jpg 1x, ../images/portfolio/img7-tablet@2.jpg 2x"
+                      srcset="./images/portfolio/img7-tablet.jpg 1x, 
+                              ./images/portfolio/img7-tablet@2.jpg 2x"
                       type="image/jpeg" media="(min-width: 768px)" />
   
                    
                     <source
-                      srcset="../images/portfolio/img7-desk.jpg 1x, ../images/portfolio/img7-desk@2.jpg  2x"
+                      srcset="./images/portfolio/img7-desk.jpg 1x,
+                             ./images/portfolio/img7-desk@2.jpg  2x"
                       type="image/jpeg" media="(min-width: 1200px)" />
-                    <img class="portfolio__img" src="../images/portfolio/img7-mobile.jpg 1x " alt="Двое играют в баскетбол"
+                    <img class="portfolio__img" src="./images/portfolio/img7-mobil.jpg 1x " alt="Две коробки"
                       width="450" height="294" />
                   </picture>
-                  <!-- <img src="./images/img7.png" alt="Две коробки" /> -->
+                  
                   <p class="project__top-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -268,22 +289,25 @@
                 <div class="project__item-wrap">
                   <picture>
                     <source
-                      srcset="../images/portfolio/img8-mobile.jpg 1x,  ../images/portfolio/img8-mobile@2.jpg 2x"
+                      srcset="./images/portfolio/img8-mobil.jpg 1x, 
+                             ./images/portfolio/img8-mobil@2.jpg 2x"
                       type="image/jpeg" media="(max-width: 767.5px)" />
   
                     
                     <source
-                      srcset="../images/portfolio/img8-tablet.jpg 1x, ../images/portfolio/img8-tablet@2.jpg 2x"
+                      srcset="./images/portfolio/img8-tablet.jpg 1x, 
+                             ./images/portfolio/img8-tablet@2.jpg 2x"
                       type="image/jpeg" media="(min-width: 768px)" />
   
                    
                     <source
-                      srcset="../images/portfolio/img8-desk.jpg 1x, ../images/portfolio/img8-desk@2.jpg  2x"
+                      srcset="./images/portfolio/img8-desk.jpg 1x, 
+                             ./images/portfolio/img8-desk@2.jpg  2x"
                       type="image/jpeg" media="(min-width: 1200px)" />
-                    <img class="portfolio__img" src="../images/portfolio/img8-mobile.jpg 1x " alt="Двое играют в баскетбол"
+                    <img class="portfolio__img" src="./images/portfolio/img8-mobil.jpg 1x " alt="Карта мира"
                       width="450" height="294" />
                   </picture>
-                  <!-- <img src="./images/img8.png" alt="Карта мира" /> -->
+                  
                   <p class="project__top-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -301,26 +325,24 @@
                 <div class="project__item-wrap">
                   <picture>
                     <source
-                      srcset="../images/portfolio/img9-mobile.jpg 1x,  ../images/portfolio/img9-mobile@2.jpg 2x"
+                      srcset="../images/portfolio/img9-mobil.jpg 1x, 
+                              ../images/portfolio/img9-mobil@2.jpg 2x"
                       type="image/jpeg" media="(max-width: 767.5px)" />
   
                     
                     <source
-                      srcset="../images/portfolio/img9-tablet.jpg 1x, ../images/portfolio/img9-tablet@2.jpg 2x"
+                      srcset="../images/portfolio/img9-tablet.jpg 1x,
+                              ../images/portfolio/img9-tablet@2.jpg 2x"
                       type="image/jpeg" media="(min-width: 768px)" />
   
                    
                     <source
-                      srcset="../images/portfolio/img9-desk.jpg 1x, ../images/portfolio/img9-desk@2.jpg  2x"
+                      srcset="../images/portfolio/img9-desk.jpg 1x, 
+                              ../images/portfolio/img9-desk@2.jpg  2x"
                       type="image/jpeg" media="(min-width: 1200px)" />
-                    <img class="portfolio__img" src="../images/portfolio/img9-mobile.jpg 1x " alt="Двое играют в баскетбол"
+                    <img class="portfolio__img" src="./images/portfolio/img9-mobil.jpg 1x " alt="Страницы журнала"
                       width="450" height="294" />
                   </picture>
-                  <!-- <img
-                    src="./images/img9.png"
-                    width="370"
-                    alt="Страницы журнала"
-                  /> -->
                   <p class="project__top-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -338,22 +360,24 @@
                 <div class="project__item-wrap">
                   <picture>
                     <source
-                      srcset="../images/portfolio/img10-mobile.jpg 1x,  ../images/portfolio/img10-mobile@2.jpg 2x"
+                      srcset="./images/portfolio/img10-mobil.jpg 1x, 
+                              ./images/portfolio/img10-mobil@2.jpg 2x"
                       type="image/jpeg" media="(max-width: 767.5px)" />
   
                     
                     <source
-                      srcset="../images/portfolio/img10-tablet.jpg 1x, ../images/portfolio/img10-tablet@2.jpg 2x"
+                      srcset="./images/portfolio/img10-tablet.jpg 1x, 
+                              ./images/portfolio/img10-tablet@2.jpg 2x"
                       type="image/jpeg" media="(min-width: 768px)" />
   
                    
                     <source
-                      srcset="../images/portfolio/img10-desk.jpg 1x, ../images/portfolio/img10-desk@2.jpg  2x"
+                      srcset="./images/portfolio/img10-desk.jpg 1x, 
+                              ./images/portfolio/img10-desk@2.jpg  2x"
                       type="image/jpeg" media="(min-width: 1200px)" />
-                    <img class="portfolio__img" src="../images/portfolio/img10-mobile.jpg 1x " alt="Двое играют в баскетбол"
+                    <img class="portfolio__img" src="./images/portfolio/img10-mobil.jpg 1x " alt="Бумажная бирка"
                       width="450" height="294" />
                   </picture>
-                  <!-- <img src="./images/img10.png" alt="Бумажная бирка" /> -->
                   <p class="project__top-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -371,25 +395,24 @@
                 <div class="project__item-wrap">
                   <picture>
                     <source
-                      srcset="../images/portfolio/img11-mobile.jpg 1x,  ../images/portfolio/img11-mobile@2.jpg 2x"
+                      srcset="./images/portfolio/img11-mobil.jpg 1x, 
+                               ./images/portfolio/img11-mobil@2.jpg 2x"
                       type="image/jpeg" media="(max-width: 767.5px)" />
   
                     
                     <source
-                      srcset="../images/portfolio/img11-tablet.jpg 1x, ../images/portfolio/img11-tablet@2.jpg 2x"
+                      srcset="./images/portfolio/img11-tablet.jpg 1x,
+                              ./images/portfolio/img11-tablet@2.jpg 2x"
                       type="image/jpeg" media="(min-width: 768px)" />
   
                    
                     <source
-                      srcset="../images/portfolio/img11-desk.jpg 1x, ../images/portfolio/img11-desk@2.jpg  2x"
+                      srcset="./images/portfolio/img11-desk.jpg 1x,
+                              ./images/portfolio/img11-desk@2.jpg  2x"
                       type="image/jpeg" media="(min-width: 1200px)" />
-                    <img class="portfolio__img" src="../images/portfolio/img11-mobile.jpg 1x " alt="Двое играют в баскетбол"
+                    <img class="portfolio__img" src="./images/portfolio/img11-mobil.jpg 1x " alt="Руки на клавиатуре ноутбука"
                       width="450" height="294" />
                   </picture>
-                  <!-- <img
-                    src="./images/img11.png"
-                    alt="Руки на клавиатуре ноутбука"
-                  /> -->
                   <p class="project__top-text">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
@@ -407,7 +430,7 @@
       </div>
     </section>
 
-    <!-- Footer2- -->
+    <!-------------------------------- footer2---------------------------------->
     
    
 
@@ -494,6 +517,65 @@
         </div>
       </div>
     </footer>
+
+     <!---------------------------------------mobile-menu-------------------------------------->
+
+  <div class="menu__container js-menu-container" id="mobile-menu">
+    <button class="menu__button menu__button--absolute-close js-close-menu"
+      aria-label="Кнопка закрытия мобильного меню">
+      <svg class="menu__icon" width="40" height="40">
+        <use href="./images/icons.svg#icon-menu-close"></use>
+      </svg>
+    </button>
+    <ul class="mobile-nav">
+      <li class="mobile-nav__item"><a class="mobile-nav__link" href="./index.html">Студия</a>
+      </li>
+      <li class="mobile-nav__item"><a class="mobile-nav__link mobile-nav__link--active"
+          href="./portfolio.html">Портфолио</a></li>
+      <li class="mobile-nav__item"><a class="mobile-nav__link" href="#">Контакты</a></li>
+    </ul>
+    <ul class="mobile-contacts">
+      <li class="mobile-contacts__item">
+        <a class="mobile-contacts__link" href="tel:+380961111111">
+          +38 096 111 11 11
+        </a>
+      </li>
+      <li class="mobile-contacts__item">
+        <a class="mobile-contacts__link mobile-contacts__link--small-dark" href="mailto:info@devstudio.com">
+          info@devstudio.com
+        </a>
+      </li>
+    </ul>
+    <ul class="mobile-social">
+      <li class="mobile-social__item">
+        <a class="mobile-social__link" href="#0" target="_blank" rel="noreferrer noopener" aria-label="instagram">
+          Instagram
+        </a>
+      </li>
+      <li class="mobile-social__item">
+        <a class="mobile-social__link" href="#0" target="_blank" rel="noreferrer noopener" aria-label="twitter">
+          Twitter
+        </a>
+      </li>
+      <li class="mobile-social__item">
+        <a class="mobile-social__link" href="#0" target="_blank" rel="noreferrer noopener" aria-label="facebook">
+          Facebook
+        </a>
+      </li>
+      <li class="mobile-social__item">
+        <a class="mobile-social__link" href="#0" target="_blank" rel="noreferrer noopener" aria-label="linkedin">
+          LinkedIn
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-----------------------------------------scripts---------------------------------------->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="js/mobile-menu.js"></script>
+  <script src="./js/modal.js"></script>
 
   </body>
 </html>
