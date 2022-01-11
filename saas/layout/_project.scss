@@ -5,6 +5,7 @@
     flex-wrap: wrap;
     padding-bottom: 20px;
     margin: -15px;
+    margin-bottom: 94px;
   }
   
   
@@ -17,8 +18,6 @@
         1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
-
-  
 
   @media screen and (min-width: 768px) and (max-width:1199.5px){
     .project__item {
@@ -33,6 +32,10 @@
       width: 450px;
     height: 404px;
     }
+    .project__list{
+      margin-bottom: 60px;
+      margin-left: -30px;
+    }
   }
 
   @media screen and (min-width: 1200px){
@@ -40,10 +43,7 @@
       width: calc((100% - 3 * 30px) / 3);
       height: 404px;
     }
-  }
-  
-  .portfolio__img {
-    display: block;
+    
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199.5px) {
@@ -84,9 +84,7 @@
     border: 1px solid #eeeeee;
   }
  
-
-
-  .project__item-wrap {
+.project__item-wrap {
     position: relative;
     overflow: hidden;
   }
@@ -99,7 +97,6 @@
     width: 100%;
     height: 100%;
     left: 0;
-    // top: 0;
     bottom: 0;
     padding: 63px 24px;
     font-size: 18px;
