@@ -7,14 +7,6 @@
   background-size: cover;
 }
 
-
-@media screen and (min-width: 479.5px) {
-  .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobil.jpg);
-    }
-}
-
-
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
@@ -22,6 +14,22 @@
     max-width: 1600px;
   }
 }
+
+
+@media screen and (max-width: 767.5px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-mobil.jpg);
+    }
+}
+
+@media screen and (max-width: 767.5px) and (min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 192dpi),
+screen and (max-width: 768px) and (min-resolution: 2dppx){
+  .hero {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-mobil@2x.jpg );
+    }
+}
+
+
 
 @media screen and (min-width: 768px) and (max-width: 1199.5px){
   .hero {
