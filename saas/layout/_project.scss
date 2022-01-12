@@ -3,7 +3,6 @@
   .project__list {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 20px;
     margin: -15px;
     margin-bottom: 94px;
   }
@@ -65,8 +64,6 @@
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-title-color);
-    margin-left: 24px;
-    margin-top: 20px;
   }
   
   .project__text {
@@ -75,12 +72,11 @@
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
-    margin-left: 24px;
     margin-top: 4px;
   }
   
   .project__box {
-    padding-bottom: 20px;
+    padding: 20px 24px;
     border: 1px solid #eeeeee;
   }
  
