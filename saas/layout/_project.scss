@@ -18,24 +18,30 @@
   }
 }
 
-  @media screen and (min-width: 768px) and (max-width:1199.5px){
+  
+
+@media screen and (min-width: 479.5px) and (max-width: 768px){
+  .project__item {
+    flex-direction: column;
+    width: 450px;
+  height: 404px;
+  }
+  .project__list{
+    margin-bottom: 60px;
+    margin-left: -30px;
+  }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width:1199.5px){
     .project__item {
       width: calc((100% - 2 * 30px) / 2);
       height: 404px;
     }
   }
 
-  @media screen and (max-width: 768px){
-    .project__item {
-      flex-direction: column;
-      width: 450px;
-    height: 404px;
-    }
-    .project__list{
-      margin-bottom: 60px;
-      margin-left: -30px;
-    }
-  }
+  
 
   @media screen and (min-width: 1200px){
     .project__item {
@@ -44,7 +50,6 @@
     }
     
   }
-
   @media screen and (min-width: 768px) and (max-width: 1199.5px) {
     .portfolio__img {
       width: 354px;
