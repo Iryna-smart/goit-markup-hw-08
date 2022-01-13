@@ -62,9 +62,6 @@
     .card-team__item {
       width: calc((100% - 4 * 30px) / 4);
     }
-    // .card-team__item:not(:last-child) {
-    //   margin-right: 30px;
-    // }
   }
   
   .team__img {
@@ -72,29 +69,38 @@
     margin: 0;
     padding: 0;
   }
+ 
   
   
-  
-  @media screen and (min-width: 767.5px), (max-width: 1199.5px) {
+  @media screen and (min-width: 767.5px) and (max-width: 1199.5px) {
     .team__img {
       width: 354px;
       height: 374px;
     }
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (min-width: 480px) and (max-width: 768px){
     .team__img {
       width: 450px;
       height: 460px;
     }
   }
   
+  @media screen and (max-width: 480px){
+    .team__img {
+      width: 100%;
+      height: auto;
+  }
+  }
+
   @media screen and (min-width: 1200px) {
     .team__img {
       width: 270px;
       height: 260px;
     }
   }
+
+  
   
   .primary-title {
     font-weight: 700;

@@ -56,6 +56,7 @@ li {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 ul {
@@ -74,7 +75,7 @@ ul {
 }
 
 .container {
-  width: 100%;
+  width: 100vw;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -816,6 +817,12 @@ ul {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .footer__container {
+    width: 100%;
+  }
+}
+
 .logo-accent-footer {
   color: #fff;
 }
@@ -876,19 +883,6 @@ ul {
   text-align: center;
   color: #ffffff;
   margin-bottom: 20px;
-}
-
-.footer-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 @media screen and (min-width: 767.5px), (max-width: 1199.5px) {
@@ -973,7 +967,7 @@ ul {
   outline: none;
 }
 
-@media screen and (max-width: 1199.5px) {
+@media screen and (min-width: 480px), (max-width: 1199.5px) {
   .footer-form__input {
     width: 450px;
     padding-left: 16px;
@@ -986,6 +980,13 @@ ul {
     width: 358px;
     margin-right: 12px;
     padding-left: 15px;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 479.5px) {
+  .footer-form__input {
+    width: 100%;
   }
 }
 
@@ -1205,6 +1206,7 @@ ul {
 
 .hero {
   max-width: 1600px;
+  width: 100vw;
   padding-top: 118px;
   padding-bottom: 118px;
   margin: 0 auto;
@@ -1267,7 +1269,7 @@ ul {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  width: 360px;
+  width: 100%;
   text-align: center;
   font-weight: 900;
   font-size: 26px;
@@ -1275,6 +1277,12 @@ ul {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary-title-color);
+}
+
+@media screen and (min-width: 480px) {
+  .hero__title {
+    width: 360px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1485,17 +1493,24 @@ ul {
   padding: 0;
 }
 
-@media screen and (min-width: 767.5px), (max-width: 1199.5px) {
+@media screen and (min-width: 767.5px) and (max-width: 1199.5px) {
   .team__img {
     width: 354px;
     height: 374px;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
   .team__img {
     width: 450px;
     height: 460px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .team__img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -1627,7 +1642,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .works__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1659,6 +1674,18 @@ ul {
     display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .works__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -1704,7 +1731,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.5px) {
   .works__item:not(:last-child) {
     margin: 0 0 30px 0;
   }
@@ -1716,7 +1743,7 @@ ul {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.5px) {
   .works__title {
     text-align: center;
   }

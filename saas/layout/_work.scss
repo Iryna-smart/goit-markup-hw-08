@@ -14,7 +14,7 @@
      }
      
 
-   @media screen and (max-width:767px){
+   @media screen and (min-width:480px) and (max-width:767px){
     .works__list{
       display: flex;
       flex-direction: column;
@@ -38,6 +38,12 @@
         }
       }
 
+      @media screen and (max-width:480px) {
+        .works__list{
+          display: flex;
+          flex-direction: column;
+          }
+      }
 
   .works__box{
     height: 120px;
@@ -78,12 +84,11 @@
       }
      }
   
-  @media screen and (max-width: 768px){
+  @media screen  and (max-width: 767.5px){
        .works__item:not(:last-child){
         margin: 0 0 30px 0;
          }
-       
-     }
+       }
     
      .works__title {
       @extend %title;
@@ -92,17 +97,17 @@
       margin-bottom: 10px;
       }
 
-      @media screen and (max-width: 768px){
+      @media screen and (max-width: 767.5px){
         .works__title{
           text-align: center;
         }
       }
 
     
-    .works__after-title {
+      .works__after-title {
       @extend %afterText;
      color: var(--secondary-text-color);
     }
 
-  
+    
    
